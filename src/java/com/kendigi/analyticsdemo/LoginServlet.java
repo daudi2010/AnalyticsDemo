@@ -317,7 +317,7 @@ private String host;
                      String content = "<p>Hi</p>"; 
                      content+="<h6>Password Reset link has  been sent here</h6>"; 
                      content+="<p>We recieved your password reset request.</p>"; 
-                     content+="<a href=\"https://kendigi.com/AnalyticsKEDemo/setPassword.jsp?rcvemail="+f_email+" \">Click here to reset your password</a>"; 
+                     content+="<a href=\"?rcvemail="+f_email+" \">Click here to reset your password</a>"; 
                      content+="<p>Never share your password with anybody!</p>"; 
 
                      content+="<p>Best Regards<br><br>AnalyticsKEDemo <br></p>";
