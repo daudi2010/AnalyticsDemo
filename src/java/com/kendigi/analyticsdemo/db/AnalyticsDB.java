@@ -24,8 +24,8 @@ public class AnalyticsDB {
 	public AnalyticsDB()	 {
 		try	{
 			Class.forName("org.postgresql.Driver").newInstance();
-			//conn =  java.sql.DriverManager.getConnection("jdbc:postgresql://localhost:5432/analytics_coke?user=postgres&password=postgres");
-			conn =  java.sql.DriverManager.getConnection("jdbc:postgresql://kendigi.com:5432/davidka_analytics?user=davidka&password=qK11sh8Em3");
+			
+			conn =  java.sql.DriverManager.getConnection("YOUR Db DETAILS");
 			
                         stmt = conn.createStatement();
 			}
@@ -59,7 +59,7 @@ public class AnalyticsDB {
 	* @param query A String containing the query to be executed
 	* @param killTrigger A boolean that signifys whether to call the killOpenObjects or leave the connection live
 	* @returns rs A java.sql.ResultSet containing the required data
-	* It should be noted that the connection may be killed even thought the resultset is still to be used in MySQL ONLY
+	*
 	*/
 	public java.sql.ResultSet getResultSet(String query, boolean killTrigger)	{
 		try	{
@@ -147,7 +147,7 @@ return rows;
          preparedStatement.setString(1, loginBean.getEmail());
          preparedStatement.setString(2, loginBean.getPassword());
 
-         //System.out.println(preparedStatement);
+         
          ResultSet rs = preparedStatement.executeQuery();
          status= rs.next();
          System.out.println("user found?:"+status);
