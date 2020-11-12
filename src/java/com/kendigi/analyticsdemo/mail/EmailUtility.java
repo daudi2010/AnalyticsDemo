@@ -33,7 +33,7 @@ public class EmailUtility {
         properties.put("mail.smtp.port", port);
         properties.put("mail.smtp.auth", "true");
         properties.put("mail.smtp.starttls.enable", "true");
-        properties.put("mail.smtp.ssl.trust", "mail.kendigi.com");//important
+        properties.put("mail.smtp.ssl.trust", "mail.XXXXX.com");//important
  
         // creates a new session with an authenticator
         Authenticator auth = new Authenticator() {
