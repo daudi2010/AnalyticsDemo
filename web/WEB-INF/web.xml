@@ -10,22 +10,22 @@
     <!-- SMTP settings -->
     <context-param>
         <param-name>host</param-name>
-        <param-value>mail.kendigi.com</param-value>
+        <param-value></param-value>
     </context-param>
  
     <context-param>
         <param-name>port</param-name>
-        <param-value>25</param-value>
+        <param-value></param-value>
     </context-param>
  
     <context-param>
         <param-name>user</param-name>
-        <param-value>info@kendigi.com</param-value>
+        <param-value></param-value>
     </context-param>
  
     <context-param>
         <param-name>pass</param-name>
-        <param-value>Kenya34?#</param-value>
+        <param-value></param-value>
     </context-param>
  
     <session-config>
